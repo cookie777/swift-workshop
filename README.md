@@ -1,3 +1,5 @@
+# What to learn
+
 ### Reference
 
 - what is Reference type ?
@@ -80,3 +82,9 @@
 - dad: less ad in small project. No need when using a lot of type of view, lots of files
 
 ### Optional , extension → learn by practical code
+
+
+# Need to change project name?
+
+https://medium.com/swlh/renaming-a-project-in-xcode-30d0cd96d3ee
+https://medium.com/@joe.rocca/renaming-the-project-source-folder-in-xcode-1cfdeeb91d0e
