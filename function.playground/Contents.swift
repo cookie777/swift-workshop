@@ -27,6 +27,7 @@ func makeBreakfast(){
 }
 
 
+
 /*:
     # Solution1
     - What if I create every function for each drink menu ?
@@ -46,6 +47,7 @@ func makeBreakfastAndCoffee(){
     print("put coffee powder")
     print("use french press")
 }
+
 func makeBreakfastAndTea(){
     
     print("fry eggs")
@@ -93,11 +95,13 @@ makeBreakfastAndSmoothie()
     - Yes, it works. But still we have to create a lot of function to each menu
  */
 
-func coffee(){
+
+func coffee() -> (){
     // Coffee
     print("boil water")
     print("put coffee powder")
     print("use french press")
+
 }
 
 func tea(){
@@ -113,8 +117,9 @@ func smoothie(){
     print("prepare ice")
     print("put them into mixer")
     print("put in milk")
-    print("mix thme")
+    print("mix them")
 }
+
 
 
 
@@ -147,6 +152,7 @@ func makeBreakfastAndSmoothie2(){
     
     print("heat soup")
     
+    
     smoothie()
 
 }
@@ -178,7 +184,6 @@ func makeBreakfast(drinkMenu: ()->()){
     
     // whatever dinkMenu we get, we invoke it!
     drinkMenu()
-
 }
 
 // Day1
@@ -187,6 +192,7 @@ makeBreakfast(drinkMenu: coffee)
 makeBreakfast(drinkMenu: tea)
 // Day3
 makeBreakfast(drinkMenu: smoothie)
+// Day4
 
 
 
@@ -209,6 +215,8 @@ makeBreakfast(drinkMenu: {
     print("cut orange")
     print("squeeze orange")
 })
+
+
 // Day2
 makeBreakfast(drinkMenu: {
     // Today I wanna drink cocoa
@@ -227,3 +235,35 @@ makeBreakfast(drinkMenu: {
     print("prepare milk")
     print("heat milk")
 })
+
+
+
+
+
+
+
+
+
+
+func add(v1: Int, v2 : Int) -> Int {
+    return v1 + v2
+}
+
+func multi(v1: Int, v2 : Int) -> Int{
+    return v1 * v2
+}
+
+func calculate(order: (Int, Int) -> (Int), e: Int ){
+    
+//    order = multi
+//    e = 15
+    
+    let a = e
+    let b = 23
+    
+    let result = order(a, b)
+    
+    print(result)
+}
+
+calculate(order: multi, e: 15)

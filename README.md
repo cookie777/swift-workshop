@@ -10,10 +10,12 @@
 - why Reference type ?
     - by sharing same address, we don't have to copy object whenever we want to access
     - by storing only address, we can store variable size of object after in heap memory
+    - reference + function -> you don't have to return
 - deep copy, shallow copy
 - Assign(creating) variable is 2 phase
     - Declaration: creating box
     - Initialization: putting something inside the box
+
 
 ### Class sequence (programmatically?)
 - What is happening when viewController is instantiated?
@@ -68,7 +70,6 @@
     - we set subViews' position by stackView's constrains
 
 ### Subclass (split a uiView)
-
     - You don't always have to define all uiView(label, button) in a controller view
     - You can define in other file, as an component.
     - And at each controller view, only we have to do is call the component
@@ -106,3 +107,5 @@
 
 https://medium.com/swlh/renaming-a-project-in-xcode-30d0cd96d3ee
 https://medium.com/@joe.rocca/renaming-the-project-source-folder-in-xcode-1cfdeeb91d0e
+
+

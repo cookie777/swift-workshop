@@ -2,6 +2,8 @@ import UIKit
 
 
 
+
+
 // Is this closure?
 var q1 = {}
 print(q1)
@@ -9,7 +11,13 @@ print(q1)
 // Is this closure?
 var q2 = {print("123")}
 print(q2)
-q2()
+
+//var q2 = {
+//    return 1
+//}
+
+//
+
 
 
 
@@ -55,3 +63,4 @@ print(c3)
  # The point is
     - Am I passing function(closure) itself? or invoking and passing its result
  */
+
