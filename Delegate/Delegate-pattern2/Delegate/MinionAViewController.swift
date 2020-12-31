@@ -18,10 +18,13 @@ class MinionAViewController: UIViewController, ButtonRulesDelegate{
         
         
         let bt = BossButton()
-//        bt.delegate = self
+        
+        bt.delegate = self
+        
         view.addSubview(bt)
         
     }
+
     
     func additonalActionIfTheButtonPressed() {
         print("This is minionA! I'll do the taks instead of you!😤")

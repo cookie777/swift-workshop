@@ -3,16 +3,15 @@ import UIKit
 class Boss {
     
     var minion: RulesDelegate?
+
     
     func makeTask() -> () {
         print("I'll do main task")
     }
 
     func additionalTask(){
-        if let minion = minion{
+        if let minion = delegate{
             minion.cleanroom()
-            minion.meditation()
-            minion.cookDish()
         }else{
             print("I'll do nothing!")
         }
@@ -27,6 +26,8 @@ protocol RulesDelegate{
 }
 
 
+//---------------------------------
+
 
 class MinionA : RulesDelegate {
     func cleanroom(){
@@ -38,6 +39,9 @@ class MinionA : RulesDelegate {
     func cookDish(){
         print("I'll make breakfast")
     }
+    
+    
+    
 }
 
 class MinionB : RulesDelegate {
@@ -52,10 +56,16 @@ class MinionB : RulesDelegate {
     }
 }
 
-let yanmer = Boss()
-let minionA = MinionA()
-let minionB = MinionB()
 
-yanmer.minion = minionA
-yanmer.makeTask()
-yanmer.additionalTask()
+
+let kazu = Boss()
+let taka = MinionA()
+//let minionB = MinionB()
+
+
+kazu.minion = taka
+
+
+
+kazu.makeTask()
+kazu.additionalTask()

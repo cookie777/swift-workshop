@@ -9,7 +9,7 @@ import UIKit
 
 class BossButton: UIButton {
 
-//    weak var delegate: ButtonRulesDelegate?
+    weak var delegate: ButtonRulesDelegate?
     
     
     init() {
@@ -26,11 +26,12 @@ class BossButton: UIButton {
     
     
     @objc func whenTheButtonIsPressed(){
-//        if let delegate = delegate {
-//            delegate.additonalActionIfTheButtonPressed()
-//        }else{
-            print("no delegate!, I have to work by himself...🤢")
-//        }
+        if let delegate = delegate {
+            delegate.additonalActionIfTheButtonPressed()
+        }else{
+//            print("no delegate!, nothing..🤢")
+        }
+        
     }
     
 }

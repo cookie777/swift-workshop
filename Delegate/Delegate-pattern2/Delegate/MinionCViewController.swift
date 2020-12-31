@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MinionCViewController: UIViewController {
+class MinionCViewController: UIViewController{
 
     let bt = BossButton()
 
@@ -16,7 +16,7 @@ class MinionCViewController: UIViewController {
         view.backgroundColor = .green
         
         view.addSubview(bt)
-//        bt.delegate = self
+        bt.delegate = self
     
     }
 

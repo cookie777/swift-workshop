@@ -19,7 +19,7 @@ class MinionBViewController: UIViewController, ButtonRulesDelegate {
         let bt = BossButton()
         view.addSubview(bt)
         
-//        bt.delegate = self
+        bt.delegate = self
     }
     
     
